@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta viewport: essencial para responsividade em telas < 576px -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Memória Viva – site autoral sobre História e Cultura Afro-Brasileira, inspirado na Lei 10.639/2003 e no Museu Afro Digital da UFBA.">
+  <title>Memória Viva | Cultura Afro-Brasileira</title>
+
+  <!-- Bootstrap 4 CSS (CDN) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+
+  <!-- CSS personalizado: sempre DEPOIS do Bootstrap para sobrescrever -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= CONTAINER PRINCIPAL ================= -->
+  <div class="container-fluid px-0">
+
+    <!-- ================= NAVBAR RESPONSIVA ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand font-weight-bold" href="index.html">
+        ✊🏾 Memória Viva
+      </a>
+      <!-- Botão hambúrguer: aparece em telas menores que lg -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSite" aria-controls="navbarSite"
+              aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Início <span class="sr-only">(atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acervo.html">Acervo</a>
+          </li>
+          <!-- Menu Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuTemas"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Temas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuTemas">
+              <a class="dropdown-item" href="#historia">História e Lutas</a>
+              <a class="dropdown-item" href="#cultura">Cultura e Arte</a>
+              <a class="dropdown-item" href="#lei">Lei 10.639/2003</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://museuafrodigital.ufba.br/" target="_blank" rel="noopener">
+                Museu Afro Digital ↗
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ================= CARROSSEL DE IMAGENS ================= -->
+    <div id="bannerPrincipal" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <!-- Indicadores (bolinhas) -->
+      <ol class="carousel-indicators">
+        <li data-target="#bannerPrincipal" data-slide-to="0" class="active"></li>
+        <li data-target="#bannerPrincipal" data-slide-to="1"></li>
+        <li data-target="#bannerPrincipal" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://sspark.genspark.ai/i/WTdqyWNg1zWlSUx5?width=1600"
+               class="d-block w-100 banner-img" alt="Roda de capoeira na praça — foto real (CC)">
+          <div class="carousel-caption d-none d-md-block legenda-banner">
+            <h2>Memória que Resiste</h2>
+            <p>Preservar registros é garantir que a história seja contada por inteiro.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://sspark.genspark.ai/i/8QDFc2ej6GzBZbYv?width=1600"
+               class="d-block w-100 banner-img" alt="Fotografia histórica brasileira de 1880 — imagem real de domínio público (PICRYL)">
+          <div class="carousel-caption d-none d-md-block legenda-banner">
+            <h2>Registro Documental</h2>
+            <p>Arquivos, fotografias e audiovisuais como instrumentos de justiça histórica.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://sspark.genspark.ai/i/Y0Ffb0MIdzXrrDUB?width=1600"
+               class="d-block w-100 banner-img" alt="Festa de Iemanjá em Salvador, Bahia — foto real">
+          <div class="carousel-caption d-none d-md-block legenda-banner">
+            <h2>Cultura Viva</h2>
+            <p>Do candomblé ao samba, do capoeira ao maracatu: patrimônio do povo brasileiro.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles anterior / próximo -->
+      <a class="carousel-control-prev" href="#bannerPrincipal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#bannerPrincipal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <!-- ================= SEÇÃO: HISTÓRIA E LUTAS ================= -->
+    <section id="historia" class="area cor1 py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">História e Lutas</h2>
+        <!-- Grid: 1 coluna no mobile, 3 colunas a partir de md (≥768px) -->
+        <div class="row">
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/JXLQgiLQP4xQvYxr?width=600"
+                   class="card-img-top" alt="Comunidade quilombola brasileira — foto real (CC)">
+              <div class="card-body">
+                <h5 class="card-title">Resistência Quilombola</h5>
+                <p class="card-text">
+                  Os quilombos foram territórios de liberdade erguidos por africanos e
+                  afrodescendentes que desafiaram o sistema escravocrata. Palmares, o mais
+                  emblemático deles, resistiu por quase um século — símbolo de que a luta
+                  por dignidade é tão antiga quanto a própria colonização.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/HxGitHCMUu55c7po?width=600"
+                   class="card-img-top" alt="Parque Memorial Quilombo dos Palmares, Alagoas — foto real">
+              <div class="card-body">
+                <h5 class="card-title">Abolição e Pós-Abolição</h5>
+                <p class="card-text">
+                  A Lei Áurea de 1888 encerrou formalmente a escravidão, mas não veio
+                  acompanhada de políticas de reparação. Compreender esse abandono é
+                  fundamental para entender as desigualdades raciais que persistem no
+                  Brasil — e a importância de documentar essa trajetória.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/TPZHYBPmFSVb8Q7j?width=600"
+                   class="card-img-top" alt="Manifestação de movimentos negros em Brasília — foto real (G1)">
+              <div class="card-body">
+                <h5 class="card-title">Movimento Negro</h5>
+                <p class="card-text">
+                  Da Frente Negra Brasileira (1931) ao Movimento Negro Unificado (1978) e à
+                  Marcha Zumbi dos Palmares (1995), a organização política negra conquistou
+                  marcos como o reconhecimento do racismo como crime e a própria
+                  Lei 10.639/2003.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO: CULTURA E ARTE ================= -->
+    <section id="cultura" class="area cor2 py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="https://sspark.genspark.ai/i/ScvcK1tacLlK7pyL?width=700"
+                 class="img-fluid rounded shadow" alt="Roda de capoeira no Pelourinho, Salvador — foto real (TV Brasil/Flickr, CC)">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h2>Cultura e Arte</h2>
+            <p>
+              A cultura afro-brasileira é a alma de expressões que o mundo reconhece como
+              brasileiras: o samba, a capoeira, o candomblé, o maracatu, a culinária de
+              dendê e a literatura de autoras e autores negros. Cada manifestação carrega
+              memória ancestral, espiritualidade e estratégias de resistência.
+            </p>
+            <p>
+              Registrar essas práticas em acervos digitais — como faz o
+              <a href="https://museuafrodigital.ufba.br/" target="_blank" rel="noopener">Museu Afro Digital</a>
+              da UFBA — é transformar patrimônio em acesso público, permitindo que novas
+              gerações conheçam, estudem e se reconheçam nessa herança.
+            </p>
+            <a href="acervo.html" class="btn btn-dark">Conheça o Acervo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO: LEI 10.639/2003 (com offset) ================= -->
+    <section id="lei" class="area cor3 py-5">
+      <div class="container">
+        <!-- offset-md-2 centraliza a coluna em telas médias+; no mobile ocupa 100% -->
+        <div class="row">
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+            <h2>Lei Federal nº 10.639/2003</h2>
+            <p class="lead">
+              A lei tornou obrigatório o ensino da História e Cultura Afro-Brasileira e
+              Africana nas escolas da educação básica. Ela reconhece que educar contra o
+              racismo exige reescrever a narrativa oficial — e que acervos, museus digitais
+              e registros documentais são ferramentas essenciais dessa transformação.
+            </p>
+            <blockquote class="blockquote citacao">
+              <p class="mb-0">
+                "Preservar a memória é um ato político: quem conta a história define o futuro."
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="bg-dark text-light pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 mb-3">
+            <h5>✊🏾 Memória Viva</h5>
+            <p class="small">
+              Projeto autoral de preservação e difusão da história e cultura
+              afro-brasileira, inspirado na Lei 10.639/2003 e no Museu Afro Digital (UFBA).
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light">Início</a></li>
+              <li><a href="acervo.html" class="text-light">Acervo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center border-top border-secondary pt-3 pb-3">
+            <small>&copy; <span id="anoAtual">2026</span> Memória Viva — Desenvolvido com HTML5, CSS3, Bootstrap 4 e JavaScript.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /container-fluid -->
+
+  <!-- ================= SCRIPTS (ordem obrigatória: jQuery → Popper → Bootstrap) ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+          integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+          crossorigin="anonymous"></script>
+
+  <!-- Script personalizado: sempre por último -->
+  <script src="javascript/script.js"></script>
+</body>
+</html>
