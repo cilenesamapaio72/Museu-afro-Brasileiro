@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta viewport: essencial para responsividade em telas < 576px -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Acervo Memória Viva – registros históricos, personalidades e manifestações da cultura afro-brasileira, inspirado no Museu Afro Digital da UFBA.">
+  <title>Acervo | Memória Viva</title>
+
+  <!-- Bootstrap 4 CSS (CDN) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+
+  <!-- CSS personalizado: sempre DEPOIS do Bootstrap para sobrescrever -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= CONTAINER PRINCIPAL ================= -->
+  <div class="container-fluid px-0">
+
+    <!-- ================= NAVBAR RESPONSIVA ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand font-weight-bold" href="index.html">
+        ✊🏾 Memória Viva
+      </a>
+      <!-- Botão hambúrguer: aparece em telas menores que lg -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSite" aria-controls="navbarSite"
+              aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="acervo.html">Acervo <span class="sr-only">(atual)</span></a>
+          </li>
+          <!-- Menu Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuTemas"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Temas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuTemas">
+              <a class="dropdown-item" href="index.html#historia">História e Lutas</a>
+              <a class="dropdown-item" href="index.html#cultura">Cultura e Arte</a>
+              <a class="dropdown-item" href="index.html#lei">Lei 10.639/2003</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://museuafrodigital.ufba.br/" target="_blank" rel="noopener">
+                Museu Afro Digital ↗
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL: ACERVO ================= -->
+    <section class="area cor1 py-5">
+      <div class="container">
+        <h2 class="text-center mb-2">Acervo Documental</h2>
+        <p class="text-center mb-5">Registros históricos, personalidades e manifestações da cultura afro-brasileira.</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/rMsZbXn3v1gv3j2y?width=2560" class="card-img-top" alt="Documento manuscrito histórico do período da escravidão no Brasil" style="height:220px; object-fit:cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Registros da Escravidão</h5>
+                <p class="card-text">Cartas, registros de batismo e documentos de venda que revelam o cotidiano, a dor e a resistência das pessoas escravizadas no Brasil Imperial.</p>
+                <a href="https://bndigital.bn.gov.br/dossies/trafico-de-escravos-no-brasil/" target="_blank" rel="noopener" class="btn btn-dark btn-sm mt-auto">Ver Coleção (Acervo Externo) ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/ibbTudfFozE5cmwH?width=2560" class="card-img-top" alt="Fotografia histórica de comunidade quilombola" style="height:220px; object-fit:cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Fotografias do Século XX (Quilombolas)</h5>
+                <p class="card-text">Acervo fotográfico que retrata a vida nas comunidades quilombolas e a presença dos afro-brasileiros na sociedade urbana moderna.</p>
+                <a href="https://acervo.socioambiental.org/fotos/album/quilombolas" target="_blank" rel="noopener" class="btn btn-dark btn-sm mt-auto">Ver Coleção (Acervo Externo) ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="card h-100 shadow">
+              <img src="https://sspark.genspark.ai/i/B8mzQOXljMnExKRd?width=2560" class="card-img-top" alt="Celebração de religião de matriz africana" style="height:220px; object-fit:cover;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Arquivos de Entrevistas (História Oral)</h5>
+                <p class="card-text">Gravações raras e depoimentos sobre a religiosidade de matriz africana, a capoeira e a memória oral transmitida pela comunidade.</p>
+                <a href="http://www.labhoi.uff.br/narrativas/depoimentos" target="_blank" rel="noopener" class="btn btn-dark btn-sm mt-auto">Ver Coleção (Acervo Externo) ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+            <p class="lead">Este acervo é inspirado no <a href="https://museuafrodigital.ufba.br/" target="_blank" rel="noopener">Museu Afro Digital da Memória Africana e Afro-Brasileira (UFBA)</a>, referência em preservação e acesso digital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="bg-dark text-light pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 mb-3">
+            <h5>✊🏾 Memória Viva</h5>
+            <p class="small">
+              Projeto autoral de preservação e difusão da história e cultura
+              afro-brasileira, inspirado na Lei 10.639/2003 e no Museu Afro Digital (UFBA).
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light">Início</a></li>
+              <li><a href="acervo.html" class="text-light">Acervo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center border-top border-secondary pt-3 pb-3">
+            <small>&copy; <span id="anoAtual">2026</span> Memória Viva — Desenvolvido com HTML5, CSS3, Bootstrap 4 e JavaScript.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /container-fluid -->
+
+  <!-- ================= SCRIPTS (ordem obrigatória: jQuery → Popper → Bootstrap) ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+          integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+          crossorigin="anonymous"></script>
+
+  <!-- Script personalizado: sempre por último -->
+  <script src="javascript/script.js"></script>
+</body>
+</html>
